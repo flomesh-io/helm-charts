@@ -5,38 +5,49 @@ entries:
       charts.openshift.io/name: flomesh-console
     apiVersion: v2
     appVersion: 0.70.0-30-ubi8
-    created: "2022-12-20T22:42:56.830178+08:00"
+    created: "2023-02-24T21:06:39.004625516+08:00"
     description: A Helm chart to install flomesh-console on Kubernetes
     digest: 5b1c8194f7c932aebcc7909b629e6d821fa5ef719ee587a233275cfcb636492b
     kubeVersion: '>= 1.19'
     name: flomesh-console
     type: application
     urls:
-    - https://flomesh-io.github.io/helm-charts/flomesh-console-0.70.0-30-ubi8.tgz
+    - flomesh-console-0.70.0-30-ubi8.tgz
     version: 0.70.0-30-ubi8
   - annotations:
       charts.openshift.io/name: flomesh-console
     apiVersion: v2
     appVersion: 0.70.0-30
-    created: "2022-12-20T22:42:56.832431+08:00"
+    created: "2023-02-24T21:06:39.005356934+08:00"
     description: A Helm chart to install flomesh-console on Kubernetes
     digest: c7cb7f0caf4912fc062c18bbb1268c161241a9d5984576016c8866b2d2b5b9ee
     kubeVersion: '>= 1.19'
     name: flomesh-console
     type: application
     urls:
-    - https://flomesh-io.github.io/helm-charts/flomesh-console-0.70.0-30.tgz
+    - flomesh-console-0.70.0-30.tgz
     version: 0.70.0-30
   traffic-guru:
   - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-02-24T21:06:39.00673808+08:00"
+    description: A Helm chart to install traffic-guru on Kubernetes
+    digest: 82f189839575968a2ef8316ff54b247dfad60d919d71a1c43fd77e6629931be2
+    kubeVersion: '>= 1.19'
+    name: traffic-guru
+    type: application
+    urls:
+    - traffic-guru-0.1.0.tgz
+    version: 0.1.0
+  - apiVersion: v2
     appVersion: 0.0.7-1
-    created: "2022-12-20T22:42:56.833006+08:00"
+    created: "2023-02-24T21:06:39.00608998+08:00"
     description: A Helm chart to install traffic-guru on Kubernetes
     digest: 84626e454664bb4c0d8d604ac00360a1459e95ed410e0b3e8eae900940770b86
     kubeVersion: '>= 1.19'
     name: traffic-guru
     type: application
     urls:
-    - https://flomesh-io.github.io/helm-charts/traffic-guru-0.0.7.tgz
+    - traffic-guru-0.0.7.tgz
     version: 0.0.7
-generated: "2022-12-20T22:42:56.829402+08:00"
+generated: "2023-02-24T21:06:39.003515003+08:00"
