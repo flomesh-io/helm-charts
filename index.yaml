@@ -5,7 +5,7 @@ entries:
       charts.openshift.io/name: flomesh-console
     apiVersion: v2
     appVersion: 0.70.0-30-ubi8
-    created: "2023-02-26T23:42:30.814687325+08:00"
+    created: "2023-03-03T11:46:38.47206394+08:00"
     description: A Helm chart to install flomesh-console on Kubernetes
     digest: 5b1c8194f7c932aebcc7909b629e6d821fa5ef719ee587a233275cfcb636492b
     kubeVersion: '>= 1.19'
@@ -18,7 +18,7 @@ entries:
       charts.openshift.io/name: flomesh-console
     apiVersion: v2
     appVersion: 0.70.0-30
-    created: "2023-02-26T23:42:30.815302049+08:00"
+    created: "2023-03-03T11:46:38.473014996+08:00"
     description: A Helm chart to install flomesh-console on Kubernetes
     digest: c7cb7f0caf4912fc062c18bbb1268c161241a9d5984576016c8866b2d2b5b9ee
     kubeVersion: '>= 1.19'
@@ -29,8 +29,28 @@ entries:
     version: 0.70.0-30
   traffic-guru:
   - apiVersion: v2
+    appVersion: 0.1.0-5
+    created: "2023-03-03T11:46:38.489490358+08:00"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - condition: clickhouse.enabled
+      name: clickhouse
+      repository: https://charts.bitnami.com/bitnami
+      version: 3.0.2
+    description: A Helm chart to install traffic-guru and its dependencies on Kubernetes
+    digest: 5973f12e2d2fcd70505a6da6b43f3701a1011fe5d97c6cd8030258a7ea1641f4
+    kubeVersion: '>= 1.19'
+    name: traffic-guru
+    type: application
+    urls:
+    - traffic-guru-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-02-26T23:42:30.818865055+08:00"
+    created: "2023-03-03T11:46:38.474413719+08:00"
     description: A Helm chart to install traffic-guru on Kubernetes
     digest: 82f189839575968a2ef8316ff54b247dfad60d919d71a1c43fd77e6629931be2
     kubeVersion: '>= 1.19'
@@ -41,7 +61,7 @@ entries:
     version: 0.1.0
   - apiVersion: v2
     appVersion: 0.0.7-1
-    created: "2023-02-26T23:42:30.818237031+08:00"
+    created: "2023-03-03T11:46:38.473636776+08:00"
     description: A Helm chart to install traffic-guru on Kubernetes
     digest: 84626e454664bb4c0d8d604ac00360a1459e95ed410e0b3e8eae900940770b86
     kubeVersion: '>= 1.19'
@@ -53,7 +73,7 @@ entries:
   traffic-guru-all:
   - apiVersion: v2
     appVersion: 0.1.0-4
-    created: "2023-02-26T23:42:30.843521964+08:00"
+    created: "2023-03-03T11:46:38.518101293+08:00"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -73,7 +93,7 @@ entries:
     version: 0.1.0
   - apiVersion: v2
     appVersion: 0.0.7-18
-    created: "2023-02-26T23:42:30.832509894+08:00"
+    created: "2023-03-03T11:46:38.504471787+08:00"
     dependencies:
     - condition: mariadb.enabled
       name: mariadb
@@ -91,4 +111,4 @@ entries:
     urls:
     - traffic-guru-all-0.0.7.tgz
     version: 0.0.7
-generated: "2023-02-26T23:42:30.813967815+08:00"
+generated: "2023-03-03T11:46:38.471013911+08:00"
